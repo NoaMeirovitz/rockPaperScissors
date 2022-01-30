@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Saira+Condensed:wght@300;700&display=swap');
+
+body{
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffe9e7;
+}
+.input{
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #E6948C;
+    height: 60vh;
+    width: 80vw;
+    border-radius: 25px;
+}
+.output{
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    background-color: #FFCBCE;
+    height: 21vh;
+    width: 50vw;
+    border-radius: 25px;
+}
+h2{
+    height: 4vh;
+    font-size: 1.3em;
+    
+}
+h3{
+    height: 4vh;
+    padding: 2px;
+}
+
+button {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: transparent 0 0 0 3px,rgba(18, 18, 18, .1) 0 6px 20px;
+  box-sizing: border-box;
+  color: #121212;
+  cursor: pointer;
+  display: inline-flex;
+  flex: 1 1 auto;
+  font-family: Inter,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.2rem;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .2s,-webkit-box-shadow .2s;
+  white-space: nowrap;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button:hover {
+  box-shadow: #91544f 0 0 0 3px, transparent 0 0 0 0;
+}
+img{
+    height: 100px;
+    padding: 0;
+}
+.long{
+    height:12vh;
+}
+#userImage, #computerImage{
+height: 100px;
+}
+
+
+    </style>
+</head>
+<body>
+<div class="input">
+    <h2>Your Choice: <br><span id="user-choice" style="display: none;"></span></h2>
+    <div id="userImage">
+
+    </div>
+    <h2>Computer's Choice: <br><span id="computer-choice" style="display: none;"></span></h2>
+    <div id="computerImage">
+
+    </div>
+
+    <h2 class="long">Results: <br><span id="result" style="font-size: 4em;"><br></span></h2>
+
+    <button id="Rock">Rock</button>
+    <button id="Paper">Paper</button>
+    <button id="Scissors">Scissors</button>
+</div>
+<div class="output">
+    <h1>TOTAL SCORE</h1>
+    <h3>Your Score:<br><span id="user-score" style="font-size: 2em; color: #91544f;">0</span></h3>
+    <h3>Computer Score:<br><span id="computer-score" style="font-size: 2em; color: #91544f;">0</span></h3>
+</div>
+   <script src="js.js"></script> 
+</body>
+</html>
